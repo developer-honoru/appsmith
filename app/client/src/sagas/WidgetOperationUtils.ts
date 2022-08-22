@@ -254,6 +254,7 @@ export const handleSpecificCasesWhilePasting = (
       newWidgetList,
       (copyWidget) =>
         copyWidget.type === "BUTTON_WIDGET" ||
+        copyWidget.type === "BUTTON_SELECT_WIDGET" ||
         copyWidget.type === "ICON_WIDGET" ||
         copyWidget.type === "ICON_BUTTON_WIDGET",
     );

@@ -32,10 +32,10 @@ describe("List Widget Functionality", function() {
       "switchgroupwidget",
       "textwidget",
       "videowidget",
+      "containerwidget",
     ];
 
     const disallowed = [
-      "containerwidget",
       "tablewidgetv2",
       "radiogroupwidget",
       "tabswidget",

@@ -153,7 +153,7 @@ import camera2Widget, {
   CONFIG as CAMERA2_WIDGET_CONFIG,
 } from "../widgets/Camera2Widget";
 import ButtonSelectWidget, {
-  CONFIG as ButtonSelectWidget_CONFIG,
+  CONFIG as BUTTON_SELECT_WIDGET_CONFIG,
 } from "../widgets/ButtonSelectWidget";
 
 export const ALL_WIDGETS_AND_CONFIG = [
@@ -203,7 +203,7 @@ export const ALL_WIDGETS_AND_CONFIG = [
   [JSONFormWidget, JSON_FORM_WIDGET_CONFIG],
   [TableWidgetV2, TABLE_WIDGET_CONFIG_V2],
   [camera2Widget, CAMERA2_WIDGET_CONFIG],
-  [ButtonSelectWidget, ButtonSelectWidget_CONFIG],
+  [ButtonSelectWidget, BUTTON_SELECT_WIDGET_CONFIG],
 
   //Deprecated Widgets
   [InputWidget, INPUT_WIDGET_CONFIG],

@@ -1638,6 +1638,11 @@
 				"borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
 				"boxShadow": "none"
 			},
+      "BUTTON_SELECT_WIDGET": {
+        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+        "boxShadow": "none"
+      },
 			"BUTTON_GROUP_WIDGET": {
 				"borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
 				"boxShadow": "none",

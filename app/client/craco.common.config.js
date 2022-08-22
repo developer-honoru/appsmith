@@ -4,9 +4,9 @@ module.exports = {
   devServer: {
     client: {
       webSocketURL: {
-        hostname: "bo.washswat.com",
+        hostname: "appsmith.washswat.com",
         pathname: "/ws",
-        port: 80,
+        port: 443,
         protocol: "wss",
       },
     },

@@ -57,6 +57,7 @@ export const excludeList: WidgetType[] = [
   "DIVIDER_WIDGET",
   "FILE_PICKER_WIDGET",
   "BUTTON_WIDGET",
+  "BUTTON_SELECT_WIDGET",
   "CANVAS_WIDGET",
   "AUDIO_RECORDER_WIDGET",
   "IFRAME_WIDGET",
