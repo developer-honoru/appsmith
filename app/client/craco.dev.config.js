@@ -5,9 +5,13 @@ require("dotenv").config();
 
 module.exports = merge(common, {
   devServer: {
-    port: 80,
+    port: 8081,
     proxy: {
       "/api/": {
+        target: env.PROXY_API_SERVER,
+        changeOrigin: true,
+      },
+      "/ws": {
         target: env.PROXY_API_SERVER,
         changeOrigin: true,
       },

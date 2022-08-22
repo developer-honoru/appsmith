@@ -4,6 +4,7 @@ export const WIDGET = {
   PHONE_INPUT_WIDGET: "phoneinputwidget",
   CURRENCY_INPUT_WIDGET: "currencyinputwidget",
   BUTTON_WIDGET: "buttonwidget",
+  BUTTON_SELECT_WIDGET: "buttonselectwidget",
   MULTISELECT_WIDGET: "multiselectwidgetv2",
   BUTTON_GROUP_WIDGET: "buttongroupwidget",
   TREESELECT_WIDGET: "singleselecttreewidget",

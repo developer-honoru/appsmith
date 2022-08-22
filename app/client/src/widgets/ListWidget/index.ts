@@ -332,6 +332,7 @@ export const CONFIG = {
               "AUDIO_WIDGET",
               "BUTTON_GROUP_WIDGET",
               "BUTTON_WIDGET",
+              "BUTTON_SELECT_WIDGET",
               "CHART_WIDGET",
               "CHECKBOX_WIDGET",
               "CHECKBOX_GROUP_WIDGET",
@@ -369,7 +370,7 @@ export const CONFIG = {
 
               return {
                 widgets,
-                message: `This widget cannot be used inside the list widget.`,
+                message: `aaaThis widget cannot be used inside the list widget.`,
               };
             }
 

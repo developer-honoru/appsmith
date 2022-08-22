@@ -14,6 +14,7 @@ describe("List Widget Functionality", function() {
       "audiowidget",
       "buttongroupwidget",
       "buttonwidget",
+      "buttonselectwidget",
       "chartwidget",
       "checkboxwidget",
       "checkboxgroupwidget",
@@ -65,7 +66,7 @@ describe("List Widget Functionality", function() {
     disallowed.forEach((widget) => {
       cy.dragAndDropToWidget(widget, "listwidget", { x: 50, y: 50 });
       cy.validateToastMessage(
-        "This widget cannot be used inside the list widget.",
+        "bbbThis widget cannot be used inside the list widget.",
       );
     });
   });
