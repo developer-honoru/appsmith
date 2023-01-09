@@ -43,6 +43,7 @@ import {
   DOWNLOAD,
   EXECUTE_A_QUERY,
   EXECUTE_JS_FUNCTION,
+  FOCUS_INPUT_WIDGET,
   GET_GEO_LOCATION,
   NAVIGATE_TO,
   NO_ACTION,
@@ -123,6 +124,10 @@ const baseOptions: { label: string; value: string }[] = [
   {
     label: createMessage(RESET_WIDGET),
     value: AppsmithFunction.resetWidget,
+  },
+  {
+    label: createMessage(FOCUS_INPUT_WIDGET),
+    value: AppsmithFunction.focusInputWidget,
   },
   {
     label: createMessage(SET_INTERVAL),
@@ -369,6 +374,16 @@ function getFieldFromValue(
       },
       {
         field: FieldType.RESET_CHILDREN_FIELD,
+      },
+    );
+  }
+  if (value.indexOf("focusInputWidget") !== -1) {
+    fields.push(
+      {
+        field: FieldType.WIDGET_NAME_FIELD,
+      },
+      {
+        field: FieldType.FOCUS_INPUT_CHILDREN_FIELD,
       },
     );
   }

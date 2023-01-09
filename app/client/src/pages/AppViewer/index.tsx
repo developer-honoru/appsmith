@@ -18,6 +18,7 @@ import { EditorContext } from "components/editorComponents/EditorContextProvider
 import AppViewerPageContainer from "./AppViewerPageContainer";
 import {
   resetChildrenMetaProperty,
+  focusInputChildrenMetaProperty,
   syncUpdateWidgetMetaProperty,
   triggerEvalOnMetaUpdate,
 } from "actions/metaActions";
@@ -208,6 +209,14 @@ function AppViewer(props: Props) {
   );
 
   /**
+   * callback for initializing app
+   */
+  const focusInputChildrenMetaPropertyCallback = useCallback(
+    (widgetId: string) => dispatch(focusInputChildrenMetaProperty(widgetId)),
+    [focusInputChildrenMetaProperty, dispatch],
+  );
+
+  /**
    * callback for updating widget meta property in batch
    */
   const batchUpdateWidgetPropertyCallback = useCallback(
@@ -253,6 +262,7 @@ function AppViewer(props: Props) {
         value={{
           executeAction: executeActionCallback,
           resetChildrenMetaProperty: resetChildrenMetaPropertyCallback,
+          focusInputChildrenMetaProperty: focusInputChildrenMetaPropertyCallback,
           batchUpdateWidgetProperty: batchUpdateWidgetPropertyCallback,
           syncUpdateWidgetMetaProperty: syncUpdateWidgetMetaPropertyCallback,
           triggerEvalOnMetaUpdate: triggerEvalOnMetaUpdateCallback,
