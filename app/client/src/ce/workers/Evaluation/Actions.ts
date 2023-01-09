@@ -133,6 +133,13 @@ export const PLATFORM_FUNCTIONS: Record<
       executionType: ExecutionType.PROMISE,
     };
   },
+  focusInputWidget: function(widgetName: string, resetChildren = true) {
+    return {
+      type: ActionTriggerType.FOCUS_INPUT_WIDGET_META_RECURSIVE_BY_NAME,
+      payload: { widgetName, resetChildren },
+      executionType: ExecutionType.PROMISE,
+    };
+  },
   setInterval: function(callback: Function, interval: number, id?: string) {
     return {
       type: "SET_INTERVAL",
